@@ -7,11 +7,17 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="">
-        <title>Contact Page</title>
+        <title>Home Page</title>
     </head>
     <body>
+        <nav>
+            <a href = "/">Home</a>
+            <a href = "/about">About</a>
+            <a href = "/contact">Contact</a>
+        </nav>
+        <?php //echo $slot; ?>
 
-        <h1>hello from Contact page</h1>
+        {{$slot}}
         <script src="" async defer></script>
     </body>
 </html>
