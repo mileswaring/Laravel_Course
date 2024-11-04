@@ -5,5 +5,7 @@
     <x-slot:heading>
         Home Page
     </x-slot:heading>
-
+    @foreach($comments as $comment)
+        {{$comment->Name}}
+    @endforeach
 </x-layout>

@@ -3,12 +3,16 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Models\Job;
+use App\Models\comments;
 
 
 
 
 Route::get('/', function () {
-    return view('home');
+    $comments = comments::all();
+
+
+    return view('home', ['comments' => $comments]);
 });
 
 Route::get('/jobs', function (){
